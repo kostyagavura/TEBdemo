@@ -10,12 +10,13 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>Author/th>
+        <th>Author</th>
     </tr>
     <tr th:each="author : ${authors}">
         <td th:text="${author.id}"></td>
         <td th:text="${author.firstName}"></td>
         <td th:text="${author.lastName}"></td>
+        <td th:text="${author.getBooks()}"></td>
     </tr>
 </table>
 
